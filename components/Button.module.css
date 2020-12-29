@@ -1,0 +1,50 @@
+/*
+You do not need to worry about .error {} colliding with any other `.css` or
+`.module.css` files!
+*/
+.error {
+  color: white;
+  background-color: var(--colorTeal);
+}
+
+@media (max-width: 600px) {
+  .error {
+    width: 100%;
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    background-color: lightblue;
+  }
+}
+
+.btn {
+  align-self: center;
+  background-color: #e9ebeb;
+  background-color: var(--colorGrayLight);
+  border: 0;
+  border-radius: 6px;
+  border-radius: var(--smallRadius);
+  box-sizing: border-box;
+  color: #0e1e24;
+  color: var(--colorTextLoud);
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  font-weight: var(--mediumWeight);
+  line-height: calc(24px - 4px);
+  line-height: calc(var(--small) - var(--nano));
+  min-width: calc(40px - 4px);
+  min-width: calc(var(--medium) - var(--nano));
+  outline: 0;
+  padding: 8px 16px;
+  padding: var(--micro) var(--tiny);
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: auto;
+}
+
+.btn-primary {
+  background-color: var(--colorTealDarker);
+  color: var(--colorWhite);
+}
